@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Differential Scale</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: transparent;
+            color: #333;
+        }
+
+        .form-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p.instructions {
+            text-align: center;
+            font-style: italic;
+        }
+
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .matrix-table th, .matrix-table td {
+            padding: 5px;
+        }
+
+        .matrix-table th {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .matrix-table td.radio-buttons {
+            text-align: center;
+            padding-left: 1%; /* Smaller padding for responsiveness */
+            padding-right: 1%;
+        }
+
+        .matrix-table .row-label-left {
+            font-weight: bold;
+            text-align: left;
+            white-space: nowrap;
+            padding-right: 1%; /* Smaller padding for responsiveness */
+        }
+
+        .matrix-table .row-label-right {
+            font-weight: bold;
+            text-align: right;
+            white-space: nowrap;
+            padding-left: 1%; /* Smaller padding for responsiveness */
+        }
+
+        .radio-group {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+        }
+
+        .radio-group input[type="radio"] {
+            margin: 0 2px;
+        }
+
+        .two-columns {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .column {
+            width: 48%;
+        }
+
+        .divider {
+            width: 2px; /* Adjusted width for divider */
+            background-color: #ccc; /* Divider color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0; /* Remove extra padding around the divider */
+        }
+
+        @media screen and (max-width: 600px) {
+            .two-columns {
+                flex-direction: column; /* Stack on small screens */
+            }
+
+            .column, .divider {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>How do you envision your website's image?</h2>
+        <p class="instructions">(Choose one of each)</p>
+        <div class="two-columns">
+            <!-- First Column -->
+            <div class="column">
+                <table class="matrix-table">
+                    <tr>
+                        <td class="row-label-left">Greyscale</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="greyscale" value="1">
+                                <input type="radio" name="greyscale" value="2">
+                                <input type="radio" name="greyscale" value="3">
+                                <input type="radio" name="greyscale" value="4">
+                                <input type="radio" name="greyscale" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Colorful</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Authoritative</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="authoritative" value="1">
+                                <input type="radio" name="authoritative" value="2">
+                                <input type="radio" name="authoritative" value="3">
+                                <input type="radio" name="authoritative" value="4">
+                                <input type="radio" name="authoritative" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Friendly</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Minimalistic</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="minimalistic" value="1">
+                                <input type="radio" name="minimalistic" value="2">
+                                <input type="radio" name="minimalistic" value="3">
+                                <input type="radio" name="minimalistic" value="4">
+                                <input type="radio" name="minimalistic" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Complex</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Conservative</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="conservative" value="1">
+                                <input type="radio" name="conservative" value="2">
+                                <input type="radio" name="conservative" value="3">
+                                <input type="radio" name="conservative" value="4">
+                                <input type="radio" name="conservative" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Nonconventional</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Masculine</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="masculine" value="1">
+                                <input type="radio" name="masculine" value="2">
+                                <input type="radio" name="masculine" value="3">
+                                <input type="radio" name="masculine" value="4">
+                                <input type="radio" name="masculine" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Feminine</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Professional</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="professional" value="1">
+                                <input type="radio" name="professional" value="2">
+                                <input type="radio" name="professional" value="3">
+                                <input type="radio" name="professional" value="4">
+                                <input type="radio" name="professional" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Casual</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Formal</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="formal" value="1">
+                                <input type="radio" name="formal" value="2">
+                                <input type="radio" name="formal" value="3">
+                                <input type="radio" name="formal" value="4">
+                                <input type="radio" name="formal" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Informal</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Second Column -->
+            <div class="column">
+                <table class="matrix-table">
+                    <tr>
+                        <td class="row-label-left">Luxurious</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="luxurious" value="1">
+                                <input type="radio" name="luxurious" value="2">
+                                <input type="radio" name="luxurious" value="3">
+                                <input type="radio" name="luxurious" value="4">
+                                <input type="radio" name="luxurious" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Natural</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Serious</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="serious" value="1">
+                                <input type="radio" name="serious" value="2">
+                                <input type="radio" name="serious" value="3">
+                                <input type="radio" name="serious" value="4">
+                                <input type="radio" name="serious" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Fun</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Classic</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="classic" value="1">
+                                <input type="radio" name="classic" value="2">
+                                <input type="radio" name="classic" value="3">
+                                <input type="radio" name="classic" value="4">
+                                <input type="radio" name="classic" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Modern</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Non-Interactive</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="non-interactive" value="1">
+                                <input type="radio" name="non-interactive" value="2">
+                                <input type="radio" name="non-interactive" value="3">
+                                <input type="radio" name="non-interactive" value="4">
+                                <input type="radio" name="non-interactive" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Interactive</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Retro</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="retro" value="1">
+                                <input type="radio" name="retro" value="2">
+                                <input type="radio" name="retro" value="3">
+                                <input type="radio" name="retro" value="4">
+                                <input type="radio" name="retro" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Futuristic</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Elegant</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="elegant" value="1">
+                                <input type="radio" name="elegant" value="2">
+                                <input type="radio" name="elegant" value="3">
+                                <input type="radio" name="elegant" value="4">
+                                <input type="radio" name="elegant" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Sporty</td>
+                    </tr>
+                    <tr>
+                        <td class="row-label-left">Safe</td>
+                        <td class="radio-buttons">
+                            <div class="radio-group">
+                                <input type="radio" name="safe" value="1">
+                                <input type="radio" name="safe" value="2">
+                                <input type="radio" name="safe" value="3">
+                                <input type="radio" name="safe" value="4">
+                                <input type="radio" name="safe" value="5">
+                            </div>
+                        </td>
+                        <td class="row-label-right">Extreme</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
