@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Differential Scale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea;
+            color: #333;
+            margin: 20px;
+        }
+
+        .form-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .matrix-table th, .matrix-table td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .matrix-table th {
+            font-weight: bold;
+        }
+
+        .matrix-table td.radio-buttons {
+            width: 50%;
+        }
+
+        .matrix-table .row-label-left,
+        .matrix-table .row-label-right {
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .radio-group {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .radio-group input[type="radio"] {
+            margin: 0 5px;
+        }
+
+        /* Optional: Add spacing between two groups */
+        .group-divider {
+            border-bottom: 2px solid #ddd;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>How do you envision your website's image?</h2>
+        <p>(Choose one of each)</p>
+        <table class="matrix-table">
+            <!-- First Group -->
+            <tr>
+                <td class="row-label-left">Greyscale</td>
+                <td class="radio-buttons">
+                    <div class="radio-group">
+                        <input type="radio" name="greyscale" value="1">
+                        <input type="radio" name="greyscale" value="2">
+                        <input type="radio" name="greyscale" value="3">
+                        <input type="radio" name="greyscale" value="4">
+                        <input type="radio" name="greyscale" value="5">
+                    </div>
+                </td>
+                <td class="row-label-right">Colorful</td>
+            </tr>
+            <tr>
+                <td class="row-label-left">Authoritative</td>
+                <td class="radio-buttons">
+                    <div class="radio-group">
+                        <input type="radio" name="authoritative" value="1">
+                        <input type="radio" name="authoritative" value="2">
+                        <input type="radio" name="authoritative" value="3">
+                        <input type="radio" name="authoritative" value="4">
+                        <input type="radio" name="authoritative" value="5">
+                    </div>
+                </td>
+                <td class="row-label-right">Friendly</td>
+            </tr>
+            <tr>
+                <td class="row-label-left">Minimalistic</td>
+                <td class="radio-buttons">
+                    <div class="radio-group">
+                        <input type="radio" name="minimalistic" value="1">
+                        <input type="radio" name="minimalistic" value="2">
+                        <input type="radio" name="minimalistic" value="3">
+                        <input type="radio" name="minimalistic" value="4">
+                        <input type="radio" name="minimalistic" value="5">
+                    </div>
+                </td>
+                <td class="row-label-right">Complex</td>
+            </tr>
+            <tr>
+                <td class="row-label-left">Conservative</td>
+                <td class="radio-buttons">
+                    <div class="radio-group">
+                        <input type="radio" name="conservative" value="1">
+                        <input type="radio" name="conservative" value="2">
+                        <input type="radio" name="conservative" value="3">
+                        <input type="radio" name="conservative" value="4">
+                        <input type="radio" name="conservative" value="5">
+                    </div>
+                </td>
+                <td class="row-label-right">Nonconventional</td>
+            </tr>
+            <!-- Optional Divider -->
+            <tr>
+                <td colspan="3" class="group-divider"></td>
+            </tr>
+            <!-- Second Group -->
+            <tr>
+                <td class="row-label-left">Masculine</td>
+                <td class="radio-buttons">
+                    <div class="radio-group">
+                        <input type="radio" name="masculine" value="1">
+                        <input type="radio" name="masculine" value="2">
+                        <input type="radio" name="masculine" value="3">
+                        <input type="radio" name="masculine" value="4">
+                        <input type="radio" name="masculine" value="5">
+                    </div>
+                </td>
+                <td class="row-label-right">Feminine</td>
+            </tr>
+            <tr>
+                <td class="row-label-left">Professional</td>
+                <td class="radio-buttons">
+                    <div class="radio-group">
+                        <input type="radio" name="professional" value="1">
+                        <input type="radio" name="professional" value="2">
+                        <input type="radio" name="professional" value="3">
+                        <input type="radio" name="professional" value="4">
+                        <input type="radio" name="professional" value="5">
+                    </div>
+                </td>
+                <td class="row-label-right">Casual</td>
+            </tr>
+            <tr>
+                <td class="row-label-left">Luxurious</td>
+                <td class="radio-buttons">
+                    <div class="radio-group">
+                        <input type="radio" name="luxurious" value="1">
+                        <input type="radio" name="luxurious" value="2">
+                        <input type="radio" name="luxurious" value="3">
+                        <input type="radio" name="luxurious" value="4">
+                        <input type="radio" name="luxurious" value="5">
+                    </div>
+                </td>
+                <td class="row-label-right">Natural</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
