@@ -1,0 +1,111 @@
+import React from "react";
+import { SemanticOption } from "./SemanticOption";
+import { VDivider } from "./VDivider";
+import "./style.css";
+
+export const Semantic = () => {
+  return (
+    <div className="semantic">
+      <div className="SDS-title">
+        <p className="div">How do you envision your website’s image?</p>
+
+        <p className="p">
+          Select all options that apply or leave blank if none
+        </p>
+      </div>
+
+      <div className="SDS-content">
+        <div className="SDS-column">
+          <SemanticOption
+            className="semantic-option-instance"
+            leftOption="Greyscale"
+            rightOption="Colorful"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="semantic-option-instance"
+            leftOption="Authoritative"
+            rightOption="Friendly"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="semantic-option-instance"
+            leftOption="Minimalistic"
+            rightOption="Complex"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="semantic-option-instance"
+            leftOption="Conventional"
+            rightOption="Innovative"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="semantic-option-instance"
+            leftOption="Masculine"
+            rightOption="Feminine"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="semantic-option-instance"
+            leftOption="Professional"
+            rightOption="Casual"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="semantic-option-instance"
+            leftOption="Luxurious"
+            rightOption="Natural"
+            selectedOption="none"
+          />
+        </div>
+
+        <VDivider className="v-divider-instance" />
+        <div className="SDS-column">
+          <SemanticOption
+            className="design-component-instance-node"
+            leftOption="Sophisticated"
+            rightOption="Playful"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="design-component-instance-node"
+            leftOption="Classic"
+            rightOption="Modern"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="design-component-instance-node"
+            leftOption="Elegant"
+            rightOption="Sporty"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="design-component-instance-node"
+            leftOption="Retro"
+            rightOption="Futuristic"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="semantic-option-2"
+            leftOption="Informative"
+            rightOption="Interactive"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="semantic-option-2"
+            leftOption="Safe"
+            rightOption="Extreme"
+            selectedOption="none"
+          />
+          <SemanticOption
+            className="semantic-option-2"
+            leftOption="Light"
+            rightOption="Dark"
+            selectedOption="none"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
