@@ -85,15 +85,16 @@
             width: 48%;
         }
 
-        .divider {
-            width: 2px; /* Adjusted width for divider */
-            background-color: #ccc; /* Divider color */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0; /* Remove extra padding around the divider */
-        }
-
+       .divider {
+    width: 2px; /* Adjusted width for divider */
+    background-color: #ccc; /* Divider color */
+    display: flex; /* Set display to flex for alignment purposes */
+    flex: 0 0 2px; /* Prevent the divider from growing or shrinking, and fix its width */
+    justify-content: center; /* Center any content horizontally (if applicable) */
+    align-items: center; /* Center any content vertically (if applicable) */
+    padding: 0; /* Remove extra padding around the divider */
+		}
+       
         @media screen and (max-width: 600px) {
             .two-columns {
                 flex-direction: column; /* Stack on small screens */
