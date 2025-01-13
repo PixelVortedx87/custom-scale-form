@@ -15,8 +15,7 @@
         }
 
         .form-container {
-            max-width: fit-content;
-            min-width: fit-content;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 10px;
             box-sizing: border-box;
@@ -32,7 +31,7 @@
         }
 
         .matrix-table {
-            width: fit-content;
+            width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
@@ -48,28 +47,27 @@
 
         .matrix-table td.radio-buttons {
             text-align: center;
-            padding-left: 3%; /* Smaller padding for responsiveness */
-            padding-right: 3%;
+            padding-left: 1%; /* Smaller padding for responsiveness */
+            padding-right: 1%;
         }
 
         .matrix-table .row-label-left {
             font-weight: bold;
             text-align: left;
             white-space: nowrap;
-            padding-right: 3%; /* Smaller padding for responsiveness */
+            padding-right: 1%; /* Smaller padding for responsiveness */
         }
 
         .matrix-table .row-label-right {
             font-weight: bold;
             text-align: right;
             white-space: nowrap;
-            padding-left: 3%; /* Smaller padding for responsiveness */
+            padding-left: 1%; /* Smaller padding for responsiveness */
         }
 
         .radio-group {
             display: flex;
-            justify-content: space-between;
-         
+            justify-content: space-evenly;
             flex-wrap: nowrap;
         }
 
@@ -93,10 +91,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 5%; /* Remove extra padding around the divider */
+            padding: 0; /* Remove extra padding around the divider */
         }
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 600px) {
             .two-columns {
                 flex-direction: column; /* Stack on small screens */
             }
